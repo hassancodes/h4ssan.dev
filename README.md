@@ -1,3 +1,1 @@
-# PayPact
-
-by Samik and Hassan
+# Software Engineer - Porfolio
