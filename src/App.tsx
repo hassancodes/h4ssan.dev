@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import "./app.css";
 
-// Dummy data
+
 const experiences = [
   {
     role: "Frontend Developer",
@@ -88,7 +89,7 @@ const App: React.FC = () => {
   const [navOpen, setNavOpen] = useState(false);
 
   return (
-    <div style={{ fontFamily: "Inter, sans-serif", background: "#f8f9fa", minHeight: "100vh", color: "#222" }}>
+    <div style={{ fontFamily: "source code pro, sans-serif", background: "#f8f9fa", minHeight: "100vh", color: "#222" }}>
       {/* Navbar */}
       <nav
         style={{
@@ -321,6 +322,7 @@ const App: React.FC = () => {
 };
 
 // Styles
+// Styles for navigation links (mobile)
 const navLinkStyle: React.CSSProperties = {
   color: "#222",
   textDecoration: "none",
@@ -332,12 +334,14 @@ const navLinkStyle: React.CSSProperties = {
   marginBottom: "0.5rem",
 };
 
+// Styles for navigation links (desktop)
 const navLinkStyleDesktop: React.CSSProperties = {
   ...navLinkStyle,
   marginBottom: 0,
   padding: "0.5rem 1rem",
 };
 
+// Styles for call-to-action buttons (e.g., "Hire Me", "Download Resume")
 const ctaBtnStyle: React.CSSProperties = {
   background: "#007bff",
   color: "#fff",
@@ -352,6 +356,7 @@ const ctaBtnStyle: React.CSSProperties = {
   boxShadow: "0 2px 8px rgba(0,0,0,0.04)",
 };
 
+// Styles for project action buttons (e.g., "GitHub", "Live")
 const projectBtnStyle: React.CSSProperties = {
   background: "#f1f3f5",
   color: "#007bff",
