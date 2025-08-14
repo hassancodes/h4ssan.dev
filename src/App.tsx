@@ -4,43 +4,46 @@ import "./app.css";
 
 const experiences = [
   {
-    role: "Frontend Developer",
-    company: "Tech Solutions",
-    duration: "2022 - Present",
-    description: "Built scalable web apps using React and TypeScript.",
+    role: "Software Engineer",
+    company: "Entim Labs",
+    duration: "Jan 2024 - Present",
+    description: "Build Spotify Bots and Dashboard for tracking Spotify artists revenue by demographics",
   },
   {
-    role: "Software Engineer",
-    company: "InnovateX",
-    duration: "2020 - 2022",
+    role: "MERN STACK Developer",
+    company: "Upwork",
+    duration: "Jan 2023 - Dec 2023",
     description: "Worked on backend APIs and cloud deployments.",
   },
   {
-    role: "Intern",
-    company: "DevStart",
-    duration: "2019 - 2020",
-    description: "Assisted in UI/UX design and testing.",
+    role: "Junior Software Developer",
+    company: "PMG Marketing",
+    duration: "May 2022 - Dec 2022",
+    description: "Worked on backend APIs and cloud deployments.",
   },
 ];
 
 const projects = [
   {
-    title: "Portfolio Website",
-    description: "A personal portfolio built with React.",
+    title: "SnapScore",
+    description: "An adb bot to improve Snapscore Automatically",
     github: "https://github.com/h4ssan/portfolio",
     live: "https://h4ssan.dev",
+    responsive: true,
   },
   {
     title: "Task Manager",
     description: "A productivity app for managing tasks.",
     github: "https://github.com/h4ssan/task-manager",
     live: "https://taskmanager.h4ssan.dev",
+    responsive: true,
   },
   {
     title: "Blog Platform",
     description: "A simple blog platform with markdown support.",
     github: "https://github.com/h4ssan/blog-platform",
     live: "https://blog.h4ssan.dev",
+    responsive: true,
   },
 ];
 
@@ -89,7 +92,7 @@ const App: React.FC = () => {
   const [navOpen, setNavOpen] = useState(false);
 
   return (
-    <div style={{ fontFamily: "source code pro, sans-serif", background: "#f8f9fa", minHeight: "100vh", color: "#222" }}>
+    <div style={{ fontFamily: "Mozilla Text, sans-serif", background: "#f8f9fa", minHeight: "100vh", color: "#252525" }}>
       {/* Navbar */}
       <nav
         style={{
@@ -111,17 +114,17 @@ const App: React.FC = () => {
             padding: "1rem",
           }}
         >
-          <span style={{ fontWeight: 700, fontSize: "1.3rem", letterSpacing: "2px" }}>hassan</span>
+          <span style={{ fontWeight: 900, fontSize: "1.5rem", letterSpacing: "1px" }}>HS</span>
           <div className="nav-menu" style={{ display: "flex", gap: "2rem" }}>
             <div className="nav-links" style={{ display: navOpen ? "flex" : "none", flexDirection: "column", position: "absolute", top: 64, right: 16, background: "#fff", boxShadow: "0 2px 8px rgba(0,0,0,0.08)", borderRadius: 8, padding: "1rem", zIndex: 20, minWidth: 180 }}>
               <a href="#experience" style={navLinkStyle}>Experience</a>
               <a href="#projects" style={navLinkStyle}>Projects</a>
-              <a href={resumeUrl} style={navLinkStyle} download>Download Resume</a>
+              <a href={resumeUrl} style={navLinkStyle} download>Resume</a>
             </div>
             <div className="nav-links-desktop" style={{ display: "flex", gap: "2rem" }}>
               <a href="#experience" style={navLinkStyleDesktop}>Experience</a>
               <a href="#projects" style={navLinkStyleDesktop}>Projects</a>
-              <a href={resumeUrl} style={navLinkStyleDesktop} download>Download Resume</a>
+              <a href={resumeUrl} style={navLinkStyleDesktop} download>Resume</a>
             </div>
             <button
               aria-label="Open navigation"
@@ -196,7 +199,7 @@ const App: React.FC = () => {
             Hire Me
           </a>
           <a href={resumeUrl} style={ctaBtnStyle} download>
-            Download Resume
+            Resume <i class="fa-solid fa-download"></i>
           </a>
         </div>
       </section>
@@ -284,7 +287,7 @@ const App: React.FC = () => {
             Hire Me
           </a>
           <a href={resumeUrl} style={ctaBtnStyle} download>
-            Download Resume
+             Resume <i class="fa-solid fa-download"></i>
           </a>
         </div>
       </section>
